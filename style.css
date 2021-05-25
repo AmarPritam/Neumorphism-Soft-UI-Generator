@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+/*. #000000D6. #000000D6 */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #8EFF33;
+}
+
+.container{
+  width: 350px;
+  background: #fff;
+  height: 95vh;
+  padding: 10px 20px;
+  box-shadow: 15px 20px 30px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box{
+  border-radius: 5px;
+  background: #8EFF33;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -100px;
+}
+
+.box .shape{
+  width: 80px;
+  height: 80px;
+  background-color: #8EFF33;
+  box-shadow: 15px 20px 30px rgba(0,0,0,0.15);
+  
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 250px;
+  margin-bottom: 20px;
+  background: #333;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #8EFF33;
+  border-radius: 50%;
+  border: 3px solid #333;
+  box-shadow: -406px 0 0 400px #8EFF33;
+}
+
+.code{
+  border-radius: 5px;
+  background: #eef3f8;
+  width: 90%;
+  height: 80px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5%;
+}
+
+
+#border{
+  background: transparent;
+  height: 100px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 11px;
+}
+
+#copy{
+  position: absolute;
+  background: #8EFF33;
+  padding: 2px 4px;
+  border-radius: 5px;
+  width: 40px;
+  right: 5%;
+  bottom: 7%;
+  border: none;
+}
+
+
+.input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 80px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 20px;
+  border: 2px solid #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}

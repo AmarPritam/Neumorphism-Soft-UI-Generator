@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+  <div class="container">
+    <div id="box" class="box">
+      
+      <div id="shape" class="shape"></div>
+      
+    </div>
+    <div class="input">
+      Color:<input onchange="generate()" type="color" id="color" value="#8EFF33">
+      Size:<input type="range" id="size" min="10" max="180" value="80">
+      Radius:<input type="range" id="radius" min="0" max="50" value="30">
+      Distance:<input type="range" id="distance" min="0" max="50" value="20">
+      Blur:<input type="range" id="blur" min="0" max="100" value="30">
+      
+    </div>
+    
+    <div id="cop" class="code">
+      <div id="border"></div>
+      <span id="copy" onclick="copyToClipboard('border')">Copy</span>
+    </div>
+    
+  </div>
+  
+  
+  <!--Script-->
+  <script src="script.js"></script>
+</body>
+
+</html>
